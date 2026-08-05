@@ -1,84 +1,37 @@
-# TasteBook — Recipe Mock-up App
+# TasteBook
 
-A React Native (Expo) recipe browser built as a mock-up submission.
+TasteBook is a React Native application built using Expo that allows users to browse recipes, search dishes, and save their favorite recipes. The application focuses on delivering a clean, responsive, and intuitive user experience.
 
 ## Features
-- Browse recipes by category (Breakfast, Lunch, Dinner, Dessert, Snack)
+
+- Browse recipes by category
 - Search recipes by name
-- Recipe detail screen with ingredient checklist and numbered steps
-- Favorites, persisted locally with AsyncStorage
-- Bottom tab navigation (Home / Favorites)
+- View recipe details with ingredients and cooking steps
+- Save favorite recipes
+- Responsive and user-friendly interface
 
-## Tech
-- React Native + Expo (managed workflow)
-- React Navigation (bottom tabs + native stack)
-- Context API for global favorites state
-- AsyncStorage for local persistence
+## Tech Stack
 
-## Project structure
+- React Native
+- Expo
+- React Navigation
+- Context API
+- AsyncStorage
+
+## Project Structure
+
 ```
-App.js                        # Navigation + providers
+App.js
 src/
-  data/recipes.js             # Mock recipe data
-  context/FavoritesContext.js # Favorites state + persistence
-  components/
-    RecipeCard.js
-    CategoryFilter.js
-  screens/
-    HomeScreen.js
-    RecipeDetailScreen.js
-    FavoritesScreen.js
+ ├── components/
+ ├── context/
+ ├── data/
+ └── screens/
 ```
 
-## Run locally
+## Installation
 
 ```bash
 npm install
 npx expo start
 ```
-
-Scan the QR code with the Expo Go app (Android/iOS) to preview it live.
-
-## Build an APK (fastest path — EAS Build, free tier)
-
-1. Install the EAS CLI (one time):
-   ```bash
-   npm install -g eas-cli
-   ```
-2. Log in / create a free Expo account:
-   ```bash
-   eas login
-   ```
-3. Configure the project for building:
-   ```bash
-   eas build:configure
-   ```
-4. Build an installable APK (not an .aab, so it's directly shareable):
-   ```bash
-   eas build -p android --profile preview
-   ```
-   If prompted, add this to `eas.json` under `build.preview` so it produces an APK instead of an AAB:
-   ```json
-   {
-     "build": {
-       "preview": {
-         "android": { "buildType": "apk" }
-       }
-     }
-   }
-   ```
-5. When the build finishes, EAS gives you a download link for the `.apk` — download it and that's your submission file.
-
-Builds run on Expo's servers, so this step needs to happen on your machine (with internet access), not in a sandboxed environment. A cloud APK build usually takes 10-15 minutes.
-
-## Alternative: local build (if you have Android Studio installed)
-```bash
-npx expo prebuild
-cd android
-./gradlew assembleRelease
-```
-The APK will be at `android/app/build/outputs/apk/release/app-release.apk`.
-
-## Notes for the submission
-- Push this folder to a public GitHub repo before submitting, so you can share the source link alongside the APK.
-- Recipe images are loaded from Unsplash URLs — the app needs internet access on first load of an image (they get cached after that).

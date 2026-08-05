@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "TasteBook",
+    "slug": "tastebook-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#FFF8F0"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "com.ujala.tastebook",
+      "adaptiveIcon": {
+        "backgroundColor": "#FF6B4A"
+      }
+    },
+    "plugins": [
+      "expo-font"
+    ]
+  }
+}
