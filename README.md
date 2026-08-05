@@ -35,3 +35,14 @@ src/
 npm install
 npx expo start
 ```
+
+
+
+
+<img width="1920" height="1080" alt="Screenshot (734)" src="https://github.com/user-attachments/assets/ed31e7af-2020-429a-9191-2ebebdf009f1" />
+<img width="1920" height="1080" alt="Screenshot (739)" src="https://github.com/user-attachments/assets/1ad36ea1-2cad-49e1-b0e8-8c44e47adee2" />
+<img width="1920" height="1080" alt="Screenshot (738)" src="https://github.com/user-attachments/assets/89728e50-a849-48f9-a13b-274bcbe19cd7" />
+<img width="1920" height="1080" alt="Screenshot (737)" src="https://github.com/user-attachments/assets/10686416-cec6-4251-86ba-7e1e7c273f1b" />
+<img width="1920" height="1080" alt="Screenshot (736)" src="https://github.com/user-attachments/assets/2660abd1-4759-44c3-95de-f88fd0e003b3" />
+<img width="1920" height="1080" alt="Screenshot (735)" src="https://github.com/user-attachments/assets/ddf969ac-a5c9-4006-9839-a7bc88b18897" />
+
